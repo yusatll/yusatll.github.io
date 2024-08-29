@@ -1,3 +1,8 @@
+require('dotenv').config();
+
+// .env dosyasındaki değerleri kullanma
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 async function fetchYouTubeVideos() {
     const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=5`);
