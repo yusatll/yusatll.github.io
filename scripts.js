@@ -22,3 +22,25 @@ async function fetchYouTubeVideos() {
 }
 
 fetchYouTubeVideos();
+
+const GITHUB_USERNAME = 'your-github-username';
+
+async function fetchGitHubRepos() {
+    const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`);
+    const repos = await response.json();
+    const projectsContainer = document.getElementById('github-projects');
+
+    repos.forEach(repo => {
+        const projectElement = document.createElement('div');
+        projectElement.classList.add('project');
+
+        projectElement.innerHTML = `
+            <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+            <p>${repo.description || 'No description available.'}</p>
+        `;
+
+        projectsContainer.appendChild(projectElement);
+    });
+}
+
+fetchGitHubRepos();
