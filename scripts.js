@@ -23,7 +23,7 @@ async function fetchYouTubeVideos() {
 
 fetchYouTubeVideos();
 
-const GITHUB_USERNAME = 'your-github-username';
+const GITHUB_USERNAME = 'yusatll';
 
 async function fetchGitHubRepos() {
     const response = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`);
