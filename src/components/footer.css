@@ -1,0 +1,74 @@
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px; 
+  margin-left: -8px; 
+  vertical-align: middle; 
+}
+
+.footer-social-links a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.thq-body-small {
+  margin: 0; 
+  vertical-align: middle;
+  line-height: 24px;
+}
+
+.footer-footer1 {
+  padding: 40px 0;
+  background-color: #f3f4f6;  /* You can adjust this color to fit your site's theme */
+}
+
+.footer-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns items to the start of the flex container */
+  flex-wrap: wrap; /* Enables the flex items to wrap as needed */
+}
+
+.footer-content {
+  width: 100%; /* Takes full width to allow internal flexbox to manage spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adds right margin for spacing */
+}
+
+.footer-links, .footer-social-links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  color: #333; /* Dark grey color for text */
+  text-decoration: none; /* Removes underline */
+  margin-bottom: 8px; /* Adds bottom margin for spacing between links */
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+.footer-credits {
+  text-align: center;
+  width: 100%; /* Ensures the credits are centered across the bottom */
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd; /* Adds a light top border for visual separation */
+  padding-top: 20px; /* Padding above the credits */
+}
+
+.thq-divider-horizontal {
+  display: none; /* Hide the horizontal divider if it's redundant */
+}
+

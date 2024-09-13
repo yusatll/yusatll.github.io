@@ -1,0 +1,61 @@
+{
+    "name": "BLOG-REACT",
+    "children": [
+      {
+        "name": "public",
+        "children": [
+          { "name": "dji_flag_blvdn.jpg" },
+          { "name": "dji_uskudar.png" },
+          { "name": "gtü.jpg" },
+          { "name": "index.html" },
+          { "name": "page_logo.jpg" },
+          { "name": "turkishFlag.jpg" }
+        ]
+      },
+      {
+        "name": "src",
+        "children": [
+          {
+            "name": "components",
+            "children": [
+              { "name": "contact.css" },
+              { "name": "contact.js" },
+              { "name": "cta.css" },
+              { "name": "cta.js" },
+              { "name": "features1.css" },
+              { "name": "features1.js" },
+              { "name": "features2.css" },
+              { "name": "features2.js" },
+              { "name": "footer.css" },
+              { "name": "footer.js" },
+              { "name": "hero.css" },
+              { "name": "hero.js" },
+              { "name": "navbar.css" },
+              { "name": "navbar.js" },
+              { "name": "pricing.css" },
+              { "name": "pricing.js" },
+              { "name": "steps.css" },
+              { "name": "steps.js" },
+              { "name": "testimonial.css" },
+              { "name": "testimonial.js" }
+            ]
+          },
+          {
+            "name": "views",
+            "children": [
+              { "name": "home.css" },
+              { "name": "home.js" },
+              { "name": "not-found.css" },
+              { "name": "not-found.js" }
+            ]
+          }
+        ]
+      },
+      { "name": ".vscode", "children": [{ "name": "settings.json" }] },
+      { "name": "craco.config.js" },
+      { "name": "index.js" },
+      { "name": "style.css" },
+      { "name": "package.json" }
+    ]
+  }
+  
