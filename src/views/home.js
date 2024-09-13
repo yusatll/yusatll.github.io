@@ -50,18 +50,12 @@ const Home = (props) => {
       <div id="about-me">
         <Testimonial></Testimonial>
       </div>
-      <Steps
-        heading={
-          <Fragment>
-            <span className="home-text17 thq-heading-2">
-              <span>{t('steps_heading')}</span>
-              <br></br>
-            </span>
-          </Fragment>
-        }
-        step1Title={t('step1_title')}
-        feature3Description={t('step1_description')}
-      ></Steps>
+      <div id="projects">
+        <Steps
+          step1Title={t('step1_title')}
+          feature3Description={t('step1_description')}
+        ></Steps>
+      </div>
       <Features1
         feature1Title={t('feature1_title')}
         feature2Title={t('feature2_title')}

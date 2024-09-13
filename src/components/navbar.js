@@ -22,7 +22,7 @@ const Navbar = (props) => {
         />
         <div data-thq="thq-navbar-nav" className="navbar-desktop-menu">
           <nav className="navbar-links1">
-            <Link to="/steps" className="thq-body-small thq-link">{t('projects')}</Link>
+            <a href="#projects" className="thq-body-small thq-link">{t('projects')}</a>
             <a href="https://www.youtube.com/@byteandflight" target="_blank" rel="noopener noreferrer" className="thq-body-small thq-link">{t('youtube_videos')}</a>
             <a href="https://photos.google.com" target="_blank" rel="noopener noreferrer" className="thq-body-small thq-link">{t('photo_gallery')}</a>
             <a href="#about-me" className="thq-body-small thq-link">{t('about_me')}</a>
