@@ -79,7 +79,7 @@
         <!-- ===================== HERO SECTION ===================== -->
         <section class="hero" id="hero">
             <div class="hero-content">
-                <div class="hero-label reveal" data-i18n="hero.label">Computer Engineer · Visual Creator</div>
+                <div class="hero-label reveal" data-i18n="hero.label">COMPUTER ENGINEER · VISUAL CREATOR</div>
                 <h1 class="hero-title reveal">
                     <span class="hero-line" data-i18n="hero.greeting">Merhaba, Ben</span>
                     <span class="hero-line hero-name">Yuşa<span class="accent-dot">.</span></span>
@@ -120,38 +120,55 @@
                     <button class="filter-btn" data-filter=".yazilim" data-i18n="filter.software">Yazılım</button>
                     <button class="filter-btn" data-filter=".fotograf" data-i18n="filter.photo">Fotoğraf</button>
                     <button class="filter-btn" data-filter=".video" data-i18n="filter.video">Video</button>
+                    <button class="filter-btn" data-filter=".app" data-i18n="filter.app">Uygulama</button>
                 </div>
 
                 <!-- Isotope Grid -->
                 <div class="works-grid" id="worksGrid">
 
-                    <!-- chat-pdf-with-ollama -->
-                    <article class="work-card yazilim reveal">
+                    <!-- Aerolyze — iOS App -->
+                    <article class="work-card app reveal">
                         <div class="work-card-visual">
-                            <div class="work-card-code">
-                                <pre><code><span class="code-keyword">from</span> <span class="code-var">ollama</span> <span class="code-keyword">import</span> <span class="code-func">chat</span>
-<span class="code-keyword">from</span> <span class="code-var">pdf_service</span> <span class="code-keyword">import</span> <span class="code-func">extract</span>
-
-<span class="code-var">doc</span> = <span class="code-func">extract</span>(<span class="code-string">"paper.pdf"</span>)
-<span class="code-var">response</span> = <span class="code-func">chat</span>(
-  <span class="code-prop">model</span>=<span class="code-string">"llama3"</span>,
-  <span class="code-prop">context</span>=<span class="code-var">doc</span>
-)</code></pre>
+                            <div class="work-card-app-icon">
+                                <img src="assets/aerolyze-icon.png" alt="Aerolyze App Icon" loading="lazy">
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
-                            <h3>Chat PDF with Ollama</h3>
-                            <p data-i18n="work.chatpdf.desc">PDF dosyalarıyla yerel LLM modelleri üzerinden sohbet
-                                edebilen yapay zeka servisi.</p>
+                            <span class="work-tag" data-i18n="work.tag.app">Uygulama</span>
+                            <h3>Aerolyze</h3>
+                            <p data-i18n="work.aerolyze.desc">Drone pilotları için profesyonel uçuş güvenliği ve
+                                meteoroloji asistanı. Rüzgâr analizi, Kp indeks takibi ve akıllı uçuş kartı.</p>
                             <div class="work-tech">
-                                <span>Python</span>
-                                <span>Ollama</span>
-                                <span>FastAPI</span>
-                                <span>LLM</span>
+                                <span>iOS</span>
+                                <span>Swift</span>
+                                <span>WeatherAPI</span>
+                                <span>CoreLocation</span>
                             </div>
-                            <a href="https://github.com/yusatll/chat-pdf-with-ollama" target="_blank" rel="noopener"
-                                class="work-link">GitHub →</a>
+                            <a href="https://apps.apple.com/tr/app/aerolyze/id6756440080?l=tr" target="_blank"
+                                rel="noopener" class="work-link">App Store →</a>
+                        </div>
+                    </article>
+
+                    <!-- NamazVakti — iOS App -->
+                    <article class="work-card app reveal">
+                        <div class="work-card-visual">
+                            <div class="work-card-app-icon">
+                                <img src="assets/namazvakti-icon.png" alt="NamazVakti App Icon" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="work-card-info">
+                            <span class="work-tag" data-i18n="work.tag.app">Uygulama</span>
+                            <h3>NamazVakti</h3>
+                            <p data-i18n="work.namazvakti.desc">Namaz vakitlerini takip eden, widget desteğiyle ana
+                                ekrana entegre, geri sayım ve kıble pusulası özellikli iOS uygulaması.</p>
+                            <div class="work-tech">
+                                <span>iOS</span>
+                                <span>Flutter</span>
+                                <span>WidgetKit</span>
+                                <span>Diyanet API</span>
+                            </div>
+                            <a href="https://apps.apple.com/app/namazvakti" target="_blank" rel="noopener"
+                                class="work-link">App Store →</a>
                         </div>
                     </article>
 
@@ -274,69 +291,6 @@
                                 <span data-i18n="work.ushaiqer.tag2">Keşif</span>
                                 <span>Drone</span>
                             </div>
-                        </div>
-                    </article>
-
-                    <!-- ollama-simple-ui -->
-                    <article class="work-card yazilim reveal">
-                        <div class="work-card-visual">
-                            <div class="work-card-code">
-                                <pre><code><span class="code-keyword">const</span> <span class="code-var">ollama</span> = <span class="code-keyword">new</span> <span class="code-func">Ollama</span>();
-
-<span class="code-keyword">const</span> <span class="code-var">response</span> = <span class="code-keyword">await</span>
-  <span class="code-var">ollama</span>.<span class="code-func">chat</span>({
-    <span class="code-prop">model</span>: <span class="code-string">'llama3'</span>,
-    <span class="code-prop">messages</span>: [{
-      <span class="code-prop">role</span>: <span class="code-string">'user'</span>,
-      <span class="code-prop">content</span>: <span class="code-var">prompt</span>
-    }]
-});</code></pre>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
-                            <h3>Ollama Simple UI</h3>
-                            <p data-i18n="work.ollama.desc">Kod vurgulama ve markdown desteğiyle yerel LLM chatbot
-                                arayüzü.</p>
-                            <div class="work-tech">
-                                <span>Python</span>
-                                <span>Ollama</span>
-                                <span>Streamlit</span>
-                                <span>AI</span>
-                            </div>
-                            <a href="https://github.com/yusatll/ollama-simple-ui" target="_blank" rel="noopener"
-                                class="work-link">GitHub →</a>
-                        </div>
-                    </article>
-
-                    <!-- llm-search-engine -->
-                    <article class="work-card yazilim reveal">
-                        <div class="work-card-visual">
-                            <div class="work-card-code">
-                                <pre><code><span class="code-keyword">from</span> <span class="code-var">extractor</span> <span class="code-keyword">import</span> <span class="code-func">WebContent</span>
-
-<span class="code-var">content</span> = <span class="code-func">WebContent</span>.<span class="code-func">extract</span>(
-  <span class="code-prop">url</span>=<span class="code-string">"https://..."</span>
-)
-<span class="code-var">summary</span> = <span class="code-var">content</span>.<span class="code-func">summarize</span>()
-<span class="code-var">translated</span> = <span class="code-var">summary</span>.<span class="code-func">translate</span>(
-  <span class="code-prop">target</span>=<span class="code-string">"tr"</span>
-)</code></pre>
-                            </div>
-                        </div>
-                        <div class="work-card-info">
-                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
-                            <h3>LLM Search Engine</h3>
-                            <p data-i18n="work.llmsearch.desc">Web içeriklerini çıkaran, özetleyen ve çeviren yapay zeka
-                                destekli arama motoru.</p>
-                            <div class="work-tech">
-                                <span>Python</span>
-                                <span>LLM</span>
-                                <span>NLP</span>
-                                <span>Web Scraping</span>
-                            </div>
-                            <a href="https://github.com/yusatll/llm-search-engine" target="_blank" rel="noopener"
-                                class="work-link">GitHub →</a>
                         </div>
                     </article>
 

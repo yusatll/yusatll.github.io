@@ -13,7 +13,7 @@ const translations = {
         "nav.contact": "İletişim",
 
         // Hero
-        "hero.label": "Computer Engineer · Visual Creator",
+        "hero.label": "COMPUTER ENGINEER · VISUAL CREATOR",
         "hero.greeting": "Merhaba, Ben",
         "hero.bio": "Sadece kod yazmıyorum; estetiği, görsel dili ve teknolojiyi harmanlayarak bütüncül dijital deneyimler yaratıyorum. Yapay zeka, yazılım geliştirme, fotoğrafçılık ve video prodüksiyon — farklı disiplinler, tek bir yaratıcı vizyon.",
         "hero.tagline": "\"Drone uçurmak, doğanın senaryosunu yazdığı bir belgeselin yönetmeni olmak gibidir.\"",
@@ -28,13 +28,16 @@ const translations = {
         "filter.software": "Yazılım",
         "filter.photo": "Fotoğraf",
         "filter.video": "Video",
+        "filter.app": "Uygulama",
 
         // Work Cards
         "work.tag.software": "Yazılım",
         "work.tag.photo": "Fotoğraf",
         "work.tag.video": "Video",
+        "work.tag.app": "Uygulama",
 
-        "work.chatpdf.desc": "PDF dosyalarıyla yerel LLM modelleri üzerinden sohbet edebilen yapay zeka servisi.",
+        "work.aerolyze.desc": "Drone pilotları için profesyonel uçuş güvenliği ve meteoroloji asistanı. Rüzgâr analizi, Kp indeks takibi ve akıllı uçuş kartı.",
+        "work.namazvakti.desc": "Namaz vakitlerini takip eden, widget desteğiyle ana ekrana entegre, geri sayım ve kıble pusulası özellikli iOS uygulaması.",
         "work.arch.title": "Mimari Fotoğrafçılık",
         "work.arch.desc": "Tarihi camilerin detay ve bütünlük arasındaki dansını yakalayan mimari çekimler.",
         "work.arch.tag1": "Mimari",
@@ -53,8 +56,6 @@ const translations = {
         "work.ushaiqer.desc": "Suudi Arabistan'daki gizli hazine Ushaiqer Miras Köyü'nün adım adım keşfi.",
         "work.ushaiqer.tag1": "Gezi",
         "work.ushaiqer.tag2": "Keşif",
-        "work.ollama.desc": "Kod vurgulama ve markdown desteğiyle yerel LLM chatbot arayüzü.",
-        "work.llmsearch.desc": "Web içeriklerini çıkaran, özetleyen ve çeviren yapay zeka destekli arama motoru.",
         "work.daytona.title": "DAYTONA K9 Mikrofon İnceleme",
         "work.daytona.desc": "MediaMarkt'ta satılan DAYTONA K9 Type-C Wireless çiftli yaka mikrofonu incelemesi.",
         "work.daytona.tag1": "İnceleme",
@@ -117,7 +118,7 @@ const translations = {
         "nav.contact": "Contact",
 
         // Hero
-        "hero.label": "Computer Engineer · Visual Creator",
+        "hero.label": "COMPUTER ENGINEER · VISUAL CREATOR",
         "hero.greeting": "Hello, I'm",
         "hero.bio": "I don't just write code; I create holistic digital experiences by blending aesthetics, visual language, and technology. Artificial intelligence, software development, photography, and video production — different disciplines, one creative vision.",
         "hero.tagline": "\"Flying a drone is like being the director of a documentary written by nature.\"",
@@ -132,13 +133,16 @@ const translations = {
         "filter.software": "Software",
         "filter.photo": "Photography",
         "filter.video": "Video",
+        "filter.app": "App",
 
         // Work Cards
         "work.tag.software": "Software",
         "work.tag.photo": "Photography",
         "work.tag.video": "Video",
+        "work.tag.app": "App",
 
-        "work.chatpdf.desc": "An AI service that enables chatting with PDF files through local LLM models.",
+        "work.aerolyze.desc": "Professional flight safety and meteorology assistant for drone pilots. Wind analysis, Kp index tracking, and smart flight card.",
+        "work.namazvakti.desc": "iOS prayer times app with home screen widgets, countdown timer, and Qibla compass features.",
         "work.arch.title": "Architectural Photography",
         "work.arch.desc": "Architectural shots capturing the dance between detail and wholeness of historic mosques.",
         "work.arch.tag1": "Architecture",
@@ -157,8 +161,6 @@ const translations = {
         "work.ushaiqer.desc": "A step-by-step exploration of the hidden gem Ushaiqer Heritage Village in Saudi Arabia.",
         "work.ushaiqer.tag1": "Travel",
         "work.ushaiqer.tag2": "Explore",
-        "work.ollama.desc": "Local LLM chatbot interface with code highlighting and markdown support.",
-        "work.llmsearch.desc": "AI-powered search engine that extracts, summarizes, and translates web content.",
         "work.daytona.title": "DAYTONA K9 Mic Review",
         "work.daytona.desc": "Review of the DAYTONA K9 Type-C Wireless dual lapel microphone sold at MediaMarkt.",
         "work.daytona.tag1": "Review",

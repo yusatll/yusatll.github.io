@@ -385,9 +385,9 @@ ul {
     font-size: var(--text-xs);
     font-weight: 600;
     letter-spacing: 0.3em;
-    text-transform: uppercase;
     color: var(--color-accent);
     margin-bottom: var(--space-md);
+    margin-top: var(--space-lg);
 }
 
 .hero-title {
@@ -720,6 +720,29 @@ ul {
 .work-link:hover {
     color: var(--color-white);
     transform: translateX(4px);
+}
+
+/* App icon card visual */
+.work-card-app-icon {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+}
+
+.work-card-app-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 26px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    transition: transform var(--duration-base) var(--ease-out);
+}
+
+.work-card:hover .work-card-app-icon img {
+    transform: scale(1.08);
 }
 
 .gallery-cta {
