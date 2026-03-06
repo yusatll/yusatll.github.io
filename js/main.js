@@ -5,6 +5,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ── i18n — Language Toggle ──
+    if (typeof i18n !== 'undefined') {
+        i18n.init();
+        const langToggle = document.getElementById('langToggle');
+        if (langToggle) {
+            langToggle.addEventListener('click', () => i18n.toggle());
+        }
+    }
+
     // ── Navbar Scroll Effect ──
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('[data-nav]');
@@ -263,7 +272,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
-            btn.textContent = 'Gönderildi! ✓';
+            const sentText = (typeof window._i18nSentText !== 'undefined') ? window._i18nSentText : 'Gönderildi! ✓';
+            btn.textContent = sentText;
             btn.style.background = '#22c55e';
             btn.disabled = true;
 

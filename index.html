@@ -61,12 +61,17 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#works" data-nav>Projeler</a></li>
-                <li><a href="#gallery" data-nav>Galeri</a></li>
-                <li><a href="#videos" data-nav>Videolar</a></li>
-                <li><a href="#about" data-nav>Hakkımda</a></li>
-                <li><a href="#contact" data-nav>İletişim</a></li>
+                <li><a href="#works" data-nav data-i18n="nav.projects">Projeler</a></li>
+                <li><a href="#gallery" data-nav data-i18n="nav.gallery">Galeri</a></li>
+                <li><a href="#videos" data-nav data-i18n="nav.videos">Videolar</a></li>
+                <li><a href="#about" data-nav data-i18n="nav.about">Hakkımda</a></li>
+                <li><a href="#contact" data-nav data-i18n="nav.contact">İletişim</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Change language">
+                <span class="lang-active">TR</span>
+                <span class="lang-divider">/</span>
+                <span class="lang-inactive">EN</span>
+            </button>
         </div>
     </nav>
 
@@ -74,26 +79,27 @@
         <!-- ===================== HERO SECTION ===================== -->
         <section class="hero" id="hero">
             <div class="hero-content">
-                <div class="hero-label reveal">Computer Engineer · Visual Creator</div>
+                <div class="hero-label reveal" data-i18n="hero.label">Computer Engineer · Visual Creator</div>
                 <h1 class="hero-title reveal">
-                    <span class="hero-line">Merhaba, Ben</span>
+                    <span class="hero-line" data-i18n="hero.greeting">Merhaba, Ben</span>
                     <span class="hero-line hero-name">Yuşa<span class="accent-dot">.</span></span>
                 </h1>
-                <p class="hero-bio reveal">
+                <p class="hero-bio reveal" data-i18n="hero.bio">
                     Sadece kod yazmıyorum; estetiği, görsel dili ve teknolojiyi harmanlayarak
                     bütüncül dijital deneyimler yaratıyorum. Yapay zeka, yazılım geliştirme,
                     fotoğrafçılık ve video prodüksiyon — farklı disiplinler, tek bir yaratıcı vizyon.
                 </p>
                 <p class="hero-tagline reveal">
-                    <em>"Drone uçurmak, doğanın senaryosunu yazdığı bir belgeselin yönetmeni olmak gibidir."</em>
+                    <em data-i18n="hero.tagline">"Drone uçurmak, doğanın senaryosunu yazdığı bir belgeselin yönetmeni
+                        olmak gibidir."</em>
                 </p>
                 <div class="hero-cta reveal">
-                    <a href="#works" class="btn btn-primary">Projelerimi Keşfet</a>
-                    <a href="#contact" class="btn btn-outline">İletişime Geç</a>
+                    <a href="#works" class="btn btn-primary" data-i18n="hero.cta1">Projelerimi Keşfet</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero.cta2">İletişime Geç</a>
                 </div>
                 <div class="hero-scroll-indicator reveal">
                     <div class="scroll-line"></div>
-                    <span>Aşağı Kaydır</span>
+                    <span data-i18n="hero.scroll">Aşağı Kaydır</span>
                 </div>
             </div>
         </section>
@@ -103,16 +109,17 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">01</span>
-                    <h2 class="section-title">Seçilmiş İşler</h2>
-                    <p class="section-subtitle">Her disiplinden en çok gurur duyduğum projeler.</p>
+                    <h2 class="section-title" data-i18n="works.title">Seçilmiş İşler</h2>
+                    <p class="section-subtitle" data-i18n="works.subtitle">Her disiplinden en çok gurur duyduğum
+                        projeler.</p>
                 </div>
 
                 <!-- Isotope Filter Buttons -->
                 <div class="filter-bar reveal" id="filterBar">
-                    <button class="filter-btn active" data-filter="*">Tümü</button>
-                    <button class="filter-btn" data-filter=".yazilim">Yazılım</button>
-                    <button class="filter-btn" data-filter=".fotograf">Fotoğraf</button>
-                    <button class="filter-btn" data-filter=".video">Video</button>
+                    <button class="filter-btn active" data-filter="*" data-i18n="filter.all">Tümü</button>
+                    <button class="filter-btn" data-filter=".yazilim" data-i18n="filter.software">Yazılım</button>
+                    <button class="filter-btn" data-filter=".fotograf" data-i18n="filter.photo">Fotoğraf</button>
+                    <button class="filter-btn" data-filter=".video" data-i18n="filter.video">Video</button>
                 </div>
 
                 <!-- Isotope Grid -->
@@ -133,9 +140,10 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Yazılım</span>
+                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
                             <h3>Chat PDF with Ollama</h3>
-                            <p>PDF dosyalarıyla yerel LLM modelleri üzerinden sohbet edebilen yapay zeka servisi.</p>
+                            <p data-i18n="work.chatpdf.desc">PDF dosyalarıyla yerel LLM modelleri üzerinden sohbet
+                                edebilen yapay zeka servisi.</p>
                             <div class="work-tech">
                                 <span>Python</span>
                                 <span>Ollama</span>
@@ -154,13 +162,14 @@
                                 loading="lazy">
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Fotoğraf</span>
-                            <h3>Mimari Fotoğrafçılık</h3>
-                            <p>Tarihi camilerin detay ve bütünlük arasındaki dansını yakalayan mimari çekimler.</p>
+                            <span class="work-tag" data-i18n="work.tag.photo">Fotoğraf</span>
+                            <h3 data-i18n="work.arch.title">Mimari Fotoğrafçılık</h3>
+                            <p data-i18n="work.arch.desc">Tarihi camilerin detay ve bütünlük arasındaki dansını
+                                yakalayan mimari çekimler.</p>
                             <div class="work-tech">
-                                <span>Mimari</span>
-                                <span>İç Mekân</span>
-                                <span>İstanbul</span>
+                                <span data-i18n="work.arch.tag1">Mimari</span>
+                                <span data-i18n="work.arch.tag2">İç Mekân</span>
+                                <span data-i18n="work.arch.tag3">İstanbul</span>
                             </div>
                         </div>
                     </article>
@@ -180,13 +189,14 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Video</span>
-                            <h3>Thule Lithos 16L İnceleme</h3>
-                            <p>2 Laptop sığar mı? Yeni Thule Lithos 16L sırt çantasının dürüst kullanıcı yorumu.</p>
+                            <span class="work-tag" data-i18n="work.tag.video">Video</span>
+                            <h3 data-i18n="work.thule.title">Thule Lithos 16L İnceleme</h3>
+                            <p data-i18n="work.thule.desc">2 Laptop sığar mı? Yeni Thule Lithos 16L sırt çantasının
+                                dürüst kullanıcı yorumu.</p>
                             <div class="work-tech">
-                                <span>İnceleme</span>
-                                <span>Ürün</span>
-                                <span>Sinematik</span>
+                                <span data-i18n="work.thule.tag1">İnceleme</span>
+                                <span data-i18n="work.thule.tag2">Ürün</span>
+                                <span data-i18n="work.thule.tag3">Sinematik</span>
                             </div>
                         </div>
                     </article>
@@ -207,9 +217,10 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Yazılım</span>
+                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
                             <h3>Speech-to-Text ⭐ 11</h3>
-                            <p>GPU hızlandırmalı, Whisper tabanlı konuşmadan metne dönüştürme aracı.</p>
+                            <p data-i18n="work.stt.desc">GPU hızlandırmalı, Whisper tabanlı konuşmadan metne dönüştürme
+                                aracı.</p>
                             <div class="work-tech">
                                 <span>Python</span>
                                 <span>Whisper</span>
@@ -227,12 +238,13 @@
                             <img src="assets/gallery/photo2.jpg" alt="Fotoğraf" loading="lazy">
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Fotoğraf</span>
-                            <h3>Görsel Hikâyeler</h3>
-                            <p>Lensin arkasından dünyaya bakışımı yansıtan kişisel fotoğraf koleksiyonum.</p>
+                            <span class="work-tag" data-i18n="work.tag.photo">Fotoğraf</span>
+                            <h3 data-i18n="work.visual.title">Görsel Hikâyeler</h3>
+                            <p data-i18n="work.visual.desc">Lensin arkasından dünyaya bakışımı yansıtan kişisel fotoğraf
+                                koleksiyonum.</p>
                             <div class="work-tech">
-                                <span>Portre</span>
-                                <span>Doğa</span>
+                                <span data-i18n="work.visual.tag1">Portre</span>
+                                <span data-i18n="work.visual.tag2">Doğa</span>
                                 <span>Fine Art</span>
                             </div>
                         </div>
@@ -253,12 +265,13 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Video</span>
+                            <span class="work-tag" data-i18n="work.tag.video">Video</span>
                             <h3>Ushaiqer Heritage Village</h3>
-                            <p>Suudi Arabistan'daki gizli hazine Ushaiqer Miras Köyü'nün adım adım keşfi.</p>
+                            <p data-i18n="work.ushaiqer.desc">Suudi Arabistan'daki gizli hazine Ushaiqer Miras Köyü'nün
+                                adım adım keşfi.</p>
                             <div class="work-tech">
-                                <span>Gezi</span>
-                                <span>Keşif</span>
+                                <span data-i18n="work.ushaiqer.tag1">Gezi</span>
+                                <span data-i18n="work.ushaiqer.tag2">Keşif</span>
                                 <span>Drone</span>
                             </div>
                         </div>
@@ -281,9 +294,10 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Yazılım</span>
+                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
                             <h3>Ollama Simple UI</h3>
-                            <p>Kod vurgulama ve markdown desteğiyle yerel LLM chatbot arayüzü.</p>
+                            <p data-i18n="work.ollama.desc">Kod vurgulama ve markdown desteğiyle yerel LLM chatbot
+                                arayüzü.</p>
                             <div class="work-tech">
                                 <span>Python</span>
                                 <span>Ollama</span>
@@ -311,9 +325,10 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Yazılım</span>
+                            <span class="work-tag" data-i18n="work.tag.software">Yazılım</span>
                             <h3>LLM Search Engine</h3>
-                            <p>Web içeriklerini çıkaran, özetleyen ve çeviren yapay zeka destekli arama motoru.</p>
+                            <p data-i18n="work.llmsearch.desc">Web içeriklerini çıkaran, özetleyen ve çeviren yapay zeka
+                                destekli arama motoru.</p>
                             <div class="work-tech">
                                 <span>Python</span>
                                 <span>LLM</span>
@@ -340,13 +355,14 @@
                             </div>
                         </div>
                         <div class="work-card-info">
-                            <span class="work-tag">Video</span>
-                            <h3>DAYTONA K9 Mikrofon İnceleme</h3>
-                            <p>MediaMarkt'ta satılan DAYTONA K9 Type-C Wireless çiftli yaka mikrofonu incelemesi.</p>
+                            <span class="work-tag" data-i18n="work.tag.video">Video</span>
+                            <h3 data-i18n="work.daytona.title">DAYTONA K9 Mikrofon İnceleme</h3>
+                            <p data-i18n="work.daytona.desc">MediaMarkt'ta satılan DAYTONA K9 Type-C Wireless çiftli
+                                yaka mikrofonu incelemesi.</p>
                             <div class="work-tech">
-                                <span>İnceleme</span>
-                                <span>Teknoloji</span>
-                                <span>Ses</span>
+                                <span data-i18n="work.daytona.tag1">İnceleme</span>
+                                <span data-i18n="work.daytona.tag2">Teknoloji</span>
+                                <span data-i18n="work.daytona.tag3">Ses</span>
                             </div>
                         </div>
                     </article>
@@ -360,8 +376,8 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">02</span>
-                    <h2 class="section-title">Galeri</h2>
-                    <p class="section-subtitle">Lensin arkasından dünyaya bakış.</p>
+                    <h2 class="section-title" data-i18n="gallery.title">Galeri</h2>
+                    <p class="section-subtitle" data-i18n="gallery.subtitle">Lensin arkasından dünyaya bakış.</p>
                 </div>
 
                 <div class="gallery-masonry reveal" id="galleryGrid">
@@ -369,39 +385,39 @@
                         <img src="assets/gallery/mosque-ceiling.jpg" alt="Tarihi İstanbul Camii'nin Karmaşık Tavanı"
                             loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Cami Tavanı — İstanbul</span>
+                            <span data-i18n="gallery.ceiling">Cami Tavanı — İstanbul</span>
                         </div>
                     </div>
                     <div class="gallery-item gallery-item--wide">
                         <img src="assets/gallery/mosque-interior.jpg"
                             alt="İstanbul'daki Tarihi Caminin Karmaşık İç Mekanı" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Cami İç Mekanı — İstanbul</span>
+                            <span data-i18n="gallery.interior">Cami İç Mekanı — İstanbul</span>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="assets/gallery/succulent.jpg"
                             alt="Örgülü Sukulentlerle Zarif İç Mekan Bitki Düzenlemesi" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Bitki Düzenlemesi</span>
+                            <span data-i18n="gallery.plant">Bitki Düzenlemesi</span>
                         </div>
                     </div>
                     <div class="gallery-item gallery-item--tall">
                         <img src="assets/gallery/photo2.jpg" alt="Fotoğraf" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Portre</span>
+                            <span data-i18n="gallery.portrait">Portre</span>
                         </div>
                     </div>
                     <div class="gallery-item gallery-item--wide">
                         <img src="assets/gallery/photo5.jpg" alt="Fotoğraf" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Manzara</span>
+                            <span data-i18n="gallery.landscape">Manzara</span>
                         </div>
                     </div>
                     <div class="gallery-item">
                         <img src="assets/gallery/photo6.jpg" alt="Fotoğraf" loading="lazy">
                         <div class="gallery-overlay">
-                            <span>Doğa</span>
+                            <span data-i18n="gallery.nature">Doğa</span>
                         </div>
                     </div>
                 </div>
@@ -409,7 +425,7 @@
                 <div class="gallery-cta reveal">
                     <a href="https://www.pexels.com/tr-tr/@vayt-1871634600/" target="_blank" rel="noopener"
                         class="btn btn-outline">
-                        Tüm Fotoğrafları Gör — Pexels
+                        <span data-i18n="gallery.cta">Tüm Fotoğrafları Gör — Pexels</span>
                     </a>
                 </div>
             </div>
@@ -429,8 +445,8 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">03</span>
-                    <h2 class="section-title">Videolar</h2>
-                    <p class="section-subtitle">YouTube kanalımdan seçilmiş içerikler.</p>
+                    <h2 class="section-title" data-i18n="videos.title">Videolar</h2>
+                    <p class="section-subtitle" data-i18n="videos.subtitle">YouTube kanalımdan seçilmiş içerikler.</p>
                 </div>
 
                 <div class="videos-grid reveal">
@@ -448,8 +464,10 @@
                                 </svg>
                             </div>
                         </div>
-                        <h3 class="video-title">Thule Lithos 16L Sırt Çantası İncelemesi</h3>
-                        <p class="video-desc">2 Laptop sığar mı? Dürüst kullanıcı yorumu.</p>
+                        <h3 class="video-title" data-i18n="video.thule.title">Thule Lithos 16L Sırt Çantası İncelemesi
+                        </h3>
+                        <p class="video-desc" data-i18n="video.thule.desc">2 Laptop sığar mı? Dürüst kullanıcı yorumu.
+                        </p>
                     </div>
 
                     <!-- Video 2 -->
@@ -466,8 +484,9 @@
                                 </svg>
                             </div>
                         </div>
-                        <h3 class="video-title">Ushaiqer Heritage Village Keşfi</h3>
-                        <p class="video-desc">Suudi Arabistan'daki gizli hazine miras köyü.</p>
+                        <h3 class="video-title" data-i18n="video.ushaiqer.title">Ushaiqer Heritage Village Keşfi</h3>
+                        <p class="video-desc" data-i18n="video.ushaiqer.desc">Suudi Arabistan'daki gizli hazine miras
+                            köyü.</p>
                     </div>
 
                     <!-- Video 3 -->
@@ -484,8 +503,10 @@
                                 </svg>
                             </div>
                         </div>
-                        <h3 class="video-title">DAYTONA K9 Wireless Mikrofon İnceleme</h3>
-                        <p class="video-desc">MediaMarkt'ta satılan Type-C çiftli yaka mikrofonu.</p>
+                        <h3 class="video-title" data-i18n="video.daytona.title">DAYTONA K9 Wireless Mikrofon İnceleme
+                        </h3>
+                        <p class="video-desc" data-i18n="video.daytona.desc">MediaMarkt'ta satılan Type-C çiftli yaka
+                            mikrofonu.</p>
                     </div>
                 </div>
 
@@ -495,7 +516,7 @@
                             <path
                                 d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                         </svg>
-                        YouTube Kanalını Ziyaret Et
+                        <span data-i18n="videos.cta">YouTube Kanalını Ziyaret Et</span>
                     </a>
                 </div>
             </div>
@@ -507,13 +528,13 @@
                 <div class="about-grid">
                     <div class="about-content reveal">
                         <span class="section-label">04</span>
-                        <h2 class="section-title">Hakkımda</h2>
-                        <p class="about-text">
+                        <h2 class="section-title" data-i18n="about.title">Hakkımda</h2>
+                        <p class="about-text" data-i18n="about.text1">
                             Bilgisayar Mühendisi. Dark theme tutkunu. Yapay zeka ile kod arasında köprü kuran
                             bir geliştirici olarak LLM tabanlı projeler, konuşma tanıma sistemleri ve yapay zeka
                             arayüzleri üzerine çalışıyorum.
                         </p>
-                        <p class="about-text">
+                        <p class="about-text" data-i18n="about.text2">
                             VAYT, bu iki dünyanın kesişim noktasında doğdu — "Video" ve "View" kavramlarının
                             birleşimi ve İngilizce "White" kelimesinin fonetik karşılığı. Drone ile havadan çekimlerden
                             ürün incelemelerine, mimari fotoğrafçılıktan sinematik vlog'lara uzanan geniş bir
@@ -523,7 +544,7 @@
 
                         <div class="skills-grid">
                             <div class="skill-category">
-                                <h4>Yazılım & AI</h4>
+                                <h4 data-i18n="about.skills.dev">Yazılım & AI</h4>
                                 <div class="skill-tags">
                                     <span>Python</span>
                                     <span>JavaScript</span>
@@ -536,14 +557,14 @@
                                 </div>
                             </div>
                             <div class="skill-category">
-                                <h4>Görsel Sanatlar</h4>
+                                <h4 data-i18n="about.skills.visual">Görsel Sanatlar</h4>
                                 <div class="skill-tags">
-                                    <span>Fotoğrafçılık</span>
-                                    <span>Video Prodüksiyon</span>
-                                    <span>Drone Çekim</span>
+                                    <span data-i18n="about.skills.photography">Fotoğrafçılık</span>
+                                    <span data-i18n="about.skills.videoproduction">Video Prodüksiyon</span>
+                                    <span data-i18n="about.skills.drone">Drone Çekim</span>
                                     <span>DaVinci Resolve</span>
                                     <span>Adobe Lightroom</span>
-                                    <span>Sinematik Vlog</span>
+                                    <span data-i18n="about.skills.vlog">Sinematik Vlog</span>
                                 </div>
                             </div>
                         </div>
@@ -556,7 +577,7 @@
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
-                                <span class="stat-label">Fotoğraf</span>
+                                <span class="stat-label" data-i18n="about.stat.photo">Fotoğraf</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
@@ -573,8 +594,9 @@
             <div class="container">
                 <div class="section-header reveal">
                     <span class="section-label">05</span>
-                    <h2 class="section-title">İletişim</h2>
-                    <p class="section-subtitle">Bir projeniz mi var? Birlikte çalışalım.</p>
+                    <h2 class="section-title" data-i18n="contact.title">İletişim</h2>
+                    <p class="section-subtitle" data-i18n="contact.subtitle">Bir projeniz mi var? Birlikte çalışalım.
+                    </p>
                 </div>
 
                 <div class="contact-grid reveal">
@@ -613,15 +635,18 @@
 
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Adınız" required>
+                            <input type="text" id="name" name="name" placeholder="Adınız"
+                                data-i18n-placeholder="contact.name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+                            <input type="email" id="email" name="email" placeholder="E-posta Adresiniz"
+                                data-i18n-placeholder="contact.email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Mesajınız" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Mesajınız"
+                                data-i18n-placeholder="contact.message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Gönder</button>
+                        <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.send">Gönder</button>
                     </form>
                 </div>
             </div>
@@ -633,7 +658,8 @@
         <div class="container">
             <div class="footer-content">
                 <a href="#hero" class="footer-logo">VAYT</a>
-                <p class="footer-copy">&copy; 2026 VAYT — Ahmet Yuşa Telli. Tüm hakları saklıdır.</p>
+                <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 VAYT — Ahmet Yuşa Telli. Tüm hakları
+                    saklıdır.</p>
                 <div class="footer-socials">
                     <a href="https://github.com/yusatll" target="_blank" rel="noopener" aria-label="GitHub">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -668,6 +694,7 @@
     <!-- ===================== SCRIPTS ===================== -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 
