@@ -723,6 +723,18 @@ ul {
 }
 
 /* App icon card visual */
+.work-card.app {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.work-card.app .work-card-visual {
+    flex: 0 0 200px;
+    aspect-ratio: auto;
+    min-height: unset;
+}
+
 .work-card-app-icon {
     width: 100%;
     height: 100%;
@@ -730,19 +742,35 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-xl);
+    padding: var(--space-lg);
 }
 
 .work-card-app-icon img {
-    width: 120px;
-    height: 120px;
-    border-radius: 26px;
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
     transition: transform var(--duration-base) var(--ease-out);
 }
 
 .work-card:hover .work-card-app-icon img {
     transform: scale(1.08);
+}
+
+.work-card.app .work-card-info {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .work-card.app {
+        flex-direction: column;
+    }
+
+    .work-card.app .work-card-visual {
+        flex: none;
+        aspect-ratio: auto;
+        height: 140px;
+    }
 }
 
 .gallery-cta {
