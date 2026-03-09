@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     transitionDuration: '0.6s',
                     stagger: 30,
                     fitRows: {
-                        gutter: 0
+                        gutter: 32
                     }
                 });
             });
@@ -117,7 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 itemSelector: '.work-card',
                 layoutMode: 'fitRows',
                 transitionDuration: '0.6s',
-                stagger: 30
+                stagger: 30,
+                fitRows: {
+                    gutter: 32
+                }
             });
         }
 

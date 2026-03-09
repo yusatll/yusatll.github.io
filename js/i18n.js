@@ -22,7 +22,7 @@ const translations = {
         "hero.scroll": "Aşağı Kaydır",
 
         // Works
-        "works.title": "Seçilmiş İşler",
+        "works.title": "Projelerim",
         "works.subtitle": "Her disiplinden en çok gurur duyduğum projeler.",
         "filter.all": "Tümü",
         "filter.software": "Yazılım",
@@ -127,7 +127,7 @@ const translations = {
         "hero.scroll": "Scroll Down",
 
         // Works
-        "works.title": "Selected Works",
+        "works.title": "My Projects",
         "works.subtitle": "Projects I'm most proud of from each discipline.",
         "filter.all": "All",
         "filter.software": "Software",
